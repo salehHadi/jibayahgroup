@@ -3,6 +3,7 @@ import React from "react";
 import "../../styles/timeLine/timeLine.css";
 import { Box } from "@mui/material";
 import { Colors } from "../../styles/theme";
+import person from "../../images/person.png";
 
 export default function TimeLine() {
   return (
@@ -43,7 +44,7 @@ export default function TimeLine() {
         </div>
       </div>
 
-      <img src="/icons/person.png" alt="owner" style={{ marginBottom: -2 }} />
+      <img src={person} alt="owner" style={{ marginBottom: -2 }} />
     </Box>
   );
 }

@@ -3,6 +3,14 @@ import React, { useState } from "react";
 import NorthWestIcon from "@mui/icons-material/NorthWest";
 import { Colors, FontWeight } from "../../styles/theme/index";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import sustainability from "../../images/sustainability.svg";
+import decision from "../../images/decision.svg";
+import accuracy from "../../images/accuracy.svg";
+import img0 from "../../images/img0.jpg";
+import img1 from "../../images/img1.jpg";
+import img2 from "../../images/img2.jpg";
+import img3 from "../../images/img3.jpg";
+import img4 from "../../images/img4.jpg";
 
 export default function SecondHomeSecionMobile() {
   const servicesArr = [
@@ -21,6 +29,8 @@ export default function SecondHomeSecionMobile() {
     "أدوات ذكاء صناعي متطورة لرصد ومنع العمليات الاحتيالية وحماية الأصول",
     "مساعدة العملاء في الاستثمار في الشركات الناشئة من خلال شراء حصص وتوفير الدعم المالي والإرشادي",
   ];
+
+  const imgArr = [img0, img1, img2, img3, img4];
 
   const [serverSelected, setServeceSeleted] = useState(1);
   return (
@@ -123,7 +133,7 @@ export default function SecondHomeSecionMobile() {
             boxShadow: "0px 10px 16px  rgba(0, 0, 0, 0.2)",
             objectFit: "cover",
           }}
-          src={`/icons/img${serverSelected}.jpg`}
+          src={imgArr[serverSelected]}
           alt="server"
         />
 
@@ -173,7 +183,7 @@ export default function SecondHomeSecionMobile() {
             >
               استدامة في النمو
               <img
-                src="/icons/sustainability.svg"
+                src={sustainability}
                 alt="menuIcon"
                 width="25px"
                 height="25px"
@@ -193,7 +203,7 @@ export default function SecondHomeSecionMobile() {
             >
               دعم في اتخاذ القرارات
               <img
-                src="/icons/decision.svg"
+                src={decision}
                 alt="menuIcon"
                 width="25px"
                 height="25px"
@@ -212,7 +222,7 @@ export default function SecondHomeSecionMobile() {
             >
               الوصول إلى معلومات دقيقة وسريعة
               <img
-                src="/icons/accuracy.svg"
+                src={accuracy}
                 alt="menuIcon"
                 width="25px"
                 height="25px"
