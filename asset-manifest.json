@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jibayahgroup/static/css/main.f855e6bc.css",
+    "main.js": "/jibayahgroup/static/js/main.a8f5aa7b.js",
+    "static/css/348.c52c82c6.chunk.css": "/jibayahgroup/static/css/348.c52c82c6.chunk.css",
+    "static/js/348.77194e1a.chunk.js": "/jibayahgroup/static/js/348.77194e1a.chunk.js",
+    "static/js/453.63b15797.chunk.js": "/jibayahgroup/static/js/453.63b15797.chunk.js",
+    "static/js/123.b3d61044.chunk.js": "/jibayahgroup/static/js/123.b3d61044.chunk.js",
+    "static/media/logo.svg": "/jibayahgroup/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/jibayahgroup/index.html",
+    "main.f855e6bc.css.map": "/jibayahgroup/static/css/main.f855e6bc.css.map",
+    "main.a8f5aa7b.js.map": "/jibayahgroup/static/js/main.a8f5aa7b.js.map",
+    "348.c52c82c6.chunk.css.map": "/jibayahgroup/static/css/348.c52c82c6.chunk.css.map",
+    "348.77194e1a.chunk.js.map": "/jibayahgroup/static/js/348.77194e1a.chunk.js.map",
+    "453.63b15797.chunk.js.map": "/jibayahgroup/static/js/453.63b15797.chunk.js.map",
+    "123.b3d61044.chunk.js.map": "/jibayahgroup/static/js/123.b3d61044.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.a8f5aa7b.js"
+  ]
+}
