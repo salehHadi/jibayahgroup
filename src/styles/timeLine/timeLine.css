@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background-color: #112e42;
+  --main-color: #eeabfe;
+  --htm-color: #f06529;
+  --javascript-color: #fdd634;
+  --reactjs-color: #00d8ff;
+  --nodejs-color: #6caa48;
+  --expressjs-color: #01041d;
+  --mongodb-color: #599636;
+  --php-color: #484c89;
+}
+
+.timeline {
+  position: relative;
+  max-width: 750px;
+  /* margin: 100px auto;
+  */
+  margin: 0px auto;
+  padding-top: 32px;
+  text-align: end;
+}
+
+.container {
+  padding: 10px 0px;
+  padding-left: 32px;
+  padding-right: 25px;
+  position: relative;
+  /* width: 50%; */
+  width: 100%;
+  animation: fadeIn 500ms ease-in forwards;
+  opacity: 0;
+  right: 0;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container:nth-child(1) {
+  animation-delay: 0s;
+}
+.container:nth-child(2) {
+  animation-delay: 1s;
+}
+.container:nth-child(3) {
+  animation-delay: 2s;
+}
+.container:nth-child(4) {
+  animation-delay: 3s;
+}
+.container:nth-child(5) {
+  animation-delay: 4s;
+}
+.container:nth-child(6) {
+  animation-delay: 5s;
+}
+.container:nth-child(7) {
+  animation-delay: 6s;
+}
+
+.text-box {
+  padding: 5px 30px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 10px;
+}
+
+.text {
+  color: #fff;
+}
+
+.point {
+  position: absolute;
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  right: 27px;
+  top: 22px;
+  box-shadow: 0px 0px 2px 2px #fff;
+  z-index: 10;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  right: 31px;
+  margin-left: -3;
+
+  z-index: -1;
+  animation: moveline 3s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: 38px;
+  z-index: -1;
+  left: -15px;
+}
