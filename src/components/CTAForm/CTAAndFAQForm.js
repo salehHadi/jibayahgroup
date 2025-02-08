@@ -55,7 +55,6 @@ export default function Index() {
     const string = e.target.value;
     const getFirstLitter = `${string.slice(0, 1)}`;
     const check = getFirstLitter.match(/[a-z]+|^[\#\w]+$/gi) !== null;
-    console.log(check);
     check ? setDirectionOfWriting("ltr") : setDirectionOfWriting("rtl");
   }
 
