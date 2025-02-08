@@ -36,6 +36,7 @@ export const CTAFormContainder = styled(Box)(({ theme }) => ({
 
 export const CTANameAndLastNameContainer = styled(Box)(({ theme }) => ({
   display: "flex",
+  flexDirection: "row-reverse",
   justifyContent: "center",
   alignItems: "center",
   width: "100%",

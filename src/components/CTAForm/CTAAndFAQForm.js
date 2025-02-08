@@ -19,10 +19,8 @@ import {
   ShapeIllustaration,
   InputMessage,
 } from "./CTAAndFAQFormStyle";
-import { Typography } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { ExpandMore } from "@mui/icons-material";
-import { Colors } from "../../styles/theme";
 
 export default function Index() {
   const FAQArray = [
@@ -118,9 +116,10 @@ export default function Index() {
       </CTAFormContainder>
 
       <h5>آو</h5>
-      <div
+      <a
         target="_blank"
         variant="contained"
+        rel="noreferrer"
         sx={{ fontWeight: "bold" }}
         href="https://wa.me/+9660501718111"
         style={{
@@ -135,7 +134,7 @@ export default function Index() {
       >
         <WhatsAppIcon sx={{ margin: "0 8px" }} />
         <h5>تواصل عن طريق الواتس آب</h5>
-      </div>
+      </a>
 
       {/* FAQ Section */}
       <FAQContainer>

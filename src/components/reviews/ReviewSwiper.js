@@ -49,7 +49,7 @@ export default function ReviewSwiper() {
           modules={[Pagination, Autoplay]}
           grabCursor={true}
           initialSlide={1}
-          slidesPerView={3}
+          slidesPerView={2}
           speed={800}
           autoplay={{ delay: 1500 }}
           loop={true}
