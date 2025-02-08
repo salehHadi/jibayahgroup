@@ -53,33 +53,35 @@ export default function HeroMobile() {
           borderRadius: "4px",
         }}
       >
-        <Box
-          sx={{
-            color: Colors.color1,
-            backgroundColor: Colors.white,
-            fontWeight: FontWeight.bold,
-            padding: "2px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderRadius: "4px",
-          }}
-        >
-          <ArrowBackIcon />
-          <Typography
-            variant="h4"
+        <a href="#contact-us">
+          <Box
             sx={{
               color: Colors.color1,
-              backgroundColor: Colors.color2,
+              backgroundColor: Colors.white,
               fontWeight: FontWeight.bold,
-              padding: "12px",
-              fontSize: "16px",
+              padding: "2px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
               borderRadius: "4px",
             }}
           >
-            أحصل على استشارة مجانية
-          </Typography>
-        </Box>
+            <ArrowBackIcon />
+            <Typography
+              variant="h4"
+              sx={{
+                color: Colors.color1,
+                backgroundColor: Colors.color2,
+                fontWeight: FontWeight.bold,
+                padding: "12px",
+                fontSize: "16px",
+                borderRadius: "4px",
+              }}
+            >
+              أحصل على استشارة مجانية
+            </Typography>
+          </Box>
+        </a>
       </Box>
     </div>
   );

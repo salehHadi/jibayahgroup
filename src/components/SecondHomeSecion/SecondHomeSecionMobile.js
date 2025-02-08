@@ -238,32 +238,34 @@ export default function SecondHomeSecionMobile() {
             </Typography>
           </Box>
 
-          <Box
-            sx={{
-              fontWeight: FontWeight.bold,
-              border: `1px solid ${Colors.color1}`,
-              padding: "2px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: "4px",
-            }}
-          >
-            <ArrowBackIcon />
-            <Typography
-              variant="h4"
+          <a href="#contact-us">
+            <Box
               sx={{
-                color: Colors.white,
-                backgroundColor: Colors.color1,
                 fontWeight: FontWeight.bold,
-                padding: "12px",
-                fontSize: "16px",
+                border: `1px solid ${Colors.color1}`,
+                padding: "2px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
                 borderRadius: "4px",
               }}
             >
-              تواصل معنا الان
-            </Typography>
-          </Box>
+              <ArrowBackIcon />
+              <Typography
+                variant="h4"
+                sx={{
+                  color: Colors.white,
+                  backgroundColor: Colors.color1,
+                  fontWeight: FontWeight.bold,
+                  padding: "12px",
+                  fontSize: "16px",
+                  borderRadius: "4px",
+                }}
+              >
+                تواصل معنا الان
+              </Typography>
+            </Box>
+          </a>
         </Box>
       </Box>
     </Box>
