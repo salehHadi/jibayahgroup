@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/jibayahgroup/static/css/main.f855e6bc.css",
-    "main.js": "/jibayahgroup/static/js/main.175418dc.js",
-    "static/css/552.369590df.chunk.css": "/jibayahgroup/static/css/552.369590df.chunk.css",
-    "static/js/552.d3b790c3.chunk.js": "/jibayahgroup/static/js/552.d3b790c3.chunk.js",
+    "main.js": "/jibayahgroup/static/js/main.a07d44a5.js",
+    "static/css/911.8b29dcde.chunk.css": "/jibayahgroup/static/css/911.8b29dcde.chunk.css",
+    "static/js/911.ad94f940.chunk.js": "/jibayahgroup/static/js/911.ad94f940.chunk.js",
     "static/js/453.63b15797.chunk.js": "/jibayahgroup/static/js/453.63b15797.chunk.js",
-    "static/js/366.75175584.chunk.js": "/jibayahgroup/static/js/366.75175584.chunk.js",
+    "static/js/863.ec163c84.chunk.js": "/jibayahgroup/static/js/863.ec163c84.chunk.js",
     "static/media/img1.jpg": "/jibayahgroup/static/media/img1.4d3d871fcf5cff60314c.jpg",
     "static/media/img4.jpg": "/jibayahgroup/static/media/img4.42c3cb3cc1cb825fd8f0.jpg",
     "static/media/img0.jpg": "/jibayahgroup/static/media/img0.d8515923456e430e5d8a.jpg",
@@ -22,14 +22,14 @@
     "index.html": "/jibayahgroup/index.html",
     "static/media/burgerIcon.svg": "/jibayahgroup/static/media/burgerIcon.4d9f3b28b12ce638d16d4074d6c0bd42.svg",
     "main.f855e6bc.css.map": "/jibayahgroup/static/css/main.f855e6bc.css.map",
-    "main.175418dc.js.map": "/jibayahgroup/static/js/main.175418dc.js.map",
-    "552.369590df.chunk.css.map": "/jibayahgroup/static/css/552.369590df.chunk.css.map",
-    "552.d3b790c3.chunk.js.map": "/jibayahgroup/static/js/552.d3b790c3.chunk.js.map",
+    "main.a07d44a5.js.map": "/jibayahgroup/static/js/main.a07d44a5.js.map",
+    "911.8b29dcde.chunk.css.map": "/jibayahgroup/static/css/911.8b29dcde.chunk.css.map",
+    "911.ad94f940.chunk.js.map": "/jibayahgroup/static/js/911.ad94f940.chunk.js.map",
     "453.63b15797.chunk.js.map": "/jibayahgroup/static/js/453.63b15797.chunk.js.map",
-    "366.75175584.chunk.js.map": "/jibayahgroup/static/js/366.75175584.chunk.js.map"
+    "863.ec163c84.chunk.js.map": "/jibayahgroup/static/js/863.ec163c84.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.175418dc.js"
+    "static/js/main.a07d44a5.js"
   ]
 }
