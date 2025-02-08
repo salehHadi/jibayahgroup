@@ -1,22 +1,29 @@
-import { Container, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Container, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
-import ReviewsMobile from "./ReviewsMobile.js";
-import ReviewsDesktop from "./ReviewsDesktop.js";
 import { Colors } from "../../styles/theme";
+import ReviewSwiper from "./ReviewSwiper.js";
 
 export default function Index() {
-  const theme = useTheme();
-
-  const matches = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Container
       id="social-proof"
       sx={{
         width: "100%",
-        marginTop: "40px",
+        marginTop: "80px",
       }}
     >
-      {matches ? <ReviewsMobile /> : <ReviewsDesktop />}
+      <Box
+        sx={{
+          textAlign: "end",
+          backgroundColor: Colors.color1,
+          color: "#FFF",
+          borderRadius: "12px",
+          padding: "12px 8px ",
+        }}
+      >
+        <h3>ابرز التعليقات</h3>
+        <ReviewSwiper />
+      </Box>
     </Container>
   );
 }

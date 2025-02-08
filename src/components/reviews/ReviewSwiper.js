@@ -7,6 +7,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 export default function ReviewSwiper() {
   const data = [
@@ -41,6 +42,11 @@ export default function ReviewSwiper() {
       rate: 4.7,
     },
   ];
+
+  const theme = useTheme();
+
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <main>
       <div className="container">
@@ -49,7 +55,7 @@ export default function ReviewSwiper() {
           modules={[Pagination, Autoplay]}
           grabCursor={true}
           initialSlide={1}
-          slidesPerView={2}
+          slidesPerView={matches ? 2 : 4}
           speed={800}
           autoplay={{ delay: 1500 }}
           loop={true}

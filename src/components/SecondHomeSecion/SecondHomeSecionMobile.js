@@ -32,7 +32,7 @@ export default function SecondHomeSecionMobile() {
 
   const imgArr = [img0, img1, img2, img3, img4];
 
-  const [serverSelected, setServeceSeleted] = useState(1);
+  const [serverSelected, setServeceSeleted] = useState(0);
   return (
     <Box
       sx={{

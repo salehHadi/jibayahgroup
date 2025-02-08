@@ -1,9 +1,10 @@
-import { Box, Button, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { Box, Typography } from "@mui/material";
+import React from "react";
 import { Colors, FontWeight } from "../../styles/theme";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import TimeLine from "../timeLine/TimeLine";
+import person from "../../images/person.png";
 
 export default function HeroMobile() {
   const [text] = useTypewriter({
@@ -83,6 +84,9 @@ export default function HeroMobile() {
           </Box>
         </a>
       </Box>
+
+      <TimeLine />
+      <img src={person} alt="owner" style={{ marginBottom: -2 }} />
     </div>
   );
 }

@@ -8,6 +8,8 @@ import {
   ListItemText,
   Box,
   Typography,
+  useTheme,
+  useMediaQuery,
 } from "@mui/material";
 import jibayahLogo from "../../images/jibayahLogo.png";
 
@@ -16,10 +18,19 @@ import { useUIContext } from "../../context";
 export default function TemporaryDrawer() {
   const { toggleDrawer, state } = useUIContext();
 
+  const theme = useTheme();
+
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
+
   const list = (anchor) => (
     <Box
       sx={{
-        width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
+        width:
+          anchor === "top" || anchor === "bottom"
+            ? "auto"
+            : matches
+            ? 250
+            : 350,
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "column",

@@ -21,6 +21,7 @@ import {
 } from "./CTAAndFAQFormStyle";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { ExpandMore } from "@mui/icons-material";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 export default function Index() {
   const FAQArray = [
@@ -34,11 +35,16 @@ export default function Index() {
         "خي خدمات اضافية مساعده مجانية تساعدك في الحصول على النتائج بشكل افضل",
     },
   ];
+
+  const theme = useTheme();
+
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
+
   const displayAccordion = FAQArray.map((el, index) => (
     <AccordionElContainer key={index}>
       <AccordionEl>
         <AccordionSummaryEl expandIcon={<ExpandMore />}>
-          <h4>{el.question}</h4>
+          <h4 style={{ fontSize: matches ? "14px" : "16px" }}>{el.question}</h4>
         </AccordionSummaryEl>
         <AccordionDetailsEl>
           <h4>{el.answer}</h4>
@@ -138,7 +144,11 @@ export default function Index() {
 
       {/* FAQ Section */}
       <FAQContainer>
-        <h5 style={{ marginBottom: "24px" }}>أسئلة متكررة</h5>
+        <h5
+          style={{ marginBottom: "24px", fontSize: matches ? "18px" : "20px" }}
+        >
+          أسئلة متكررة
+        </h5>
 
         {displayAccordion}
       </FAQContainer>

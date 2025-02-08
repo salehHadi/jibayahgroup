@@ -10,16 +10,22 @@ export default function Index() {
   const matches = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Container
-      id="hero-section"
-      sx={{
-        width: "100%",
+    <div
+      style={{
         backgroundColor: Colors.color1,
-        paddingTop: "40px",
-        paddingBottom: "12px",
       }}
     >
-      {matches ? <HeroMobile /> : <HeroDesktop />}
-    </Container>
+      <Container
+        id="hero-section"
+        sx={{
+          width: "100%",
+
+          paddingTop: "40px",
+          paddingBottom: "12px",
+        }}
+      >
+        {matches ? <HeroMobile /> : <HeroDesktop />}
+      </Container>
+    </div>
   );
 }

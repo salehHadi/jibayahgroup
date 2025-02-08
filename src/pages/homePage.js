@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <div>
       <HeroSection />
-      <TimeLine />
+
       <SecondHomeSecion />
       <OurFeature />
       <Reviews />

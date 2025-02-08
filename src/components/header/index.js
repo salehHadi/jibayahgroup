@@ -9,15 +9,21 @@ export default function Index() {
 
   const matches = useMediaQuery(theme.breakpoints.down("md"));
   return (
-    <Container
-      sx={{
-        width: "100%",
+    <div
+      style={{
         backgroundColor: Colors.color1,
-        paddingTop: "12px",
-        paddingBottom: "12px",
       }}
     >
-      {matches ? <AppbarMobile /> : <AppbarDesktop />}
-    </Container>
+      <Container
+        sx={{
+          width: "100%",
+          backgroundColor: Colors.color1,
+          paddingTop: "12px",
+          paddingBottom: "12px",
+        }}
+      >
+        {matches ? <AppbarMobile /> : <AppbarDesktop />}
+      </Container>
+    </div>
   );
 }

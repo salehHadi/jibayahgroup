@@ -1,11 +1,13 @@
 import React from "react";
 
 import "../../styles/timeLine/timeLine.css";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { Colors } from "../../styles/theme";
-import person from "../../images/person.png";
 
 export default function TimeLine() {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
+  // {matches ? <HeroMobile /> : <HeroDesktop />}
   return (
     <Box
       sx={{
@@ -15,7 +17,8 @@ export default function TimeLine() {
         justifyContent: "center",
         alignItems: "center",
         borderBottomLeftRadius: "150px",
-        overflow: "hidden",
+        // overflow: "hidden",
+        width: matches ? "100%" : "33%",
       }}
     >
       <div className="timeline">
@@ -43,8 +46,6 @@ export default function TimeLine() {
           </div>
         </div>
       </div>
-
-      <img src={person} alt="owner" style={{ marginBottom: -2 }} />
     </Box>
   );
 }
