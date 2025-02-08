@@ -80,10 +80,7 @@ export const Sumite = styled(Button)(({ theme }) => ({
 }));
 
 export const WhatAppBTN = styled(Button)(({ theme }) => ({
-  fontSize: "12px",
-  backgroundColor: "#639D4A",
-  borderRadius: "16px",
-  padding: "8px 40px",
+  fontSize: "16px",
 }));
 
 // FAQ section

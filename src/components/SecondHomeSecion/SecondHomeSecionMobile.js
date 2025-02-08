@@ -75,7 +75,14 @@ export default function SecondHomeSecionMobile() {
         </Typography>
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-        <Typography variant="h5" sx={{ textAlign: "end", fontWeight: "bold" }}>
+        <Typography
+          variant="h5"
+          sx={{
+            textAlign: "end",
+            fontWeight: "bold",
+            borderBottom: `1px solid ${Colors.color2}`,
+          }}
+        >
           خدماتنا
         </Typography>
 

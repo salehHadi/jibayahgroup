@@ -22,6 +22,7 @@ import {
 import { Typography } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { ExpandMore } from "@mui/icons-material";
+import { Colors } from "../../styles/theme";
 
 export default function Index() {
   const FAQArray = [
@@ -39,9 +40,11 @@ export default function Index() {
     <AccordionElContainer key={index}>
       <AccordionEl>
         <AccordionSummaryEl expandIcon={<ExpandMore />}>
-          {el.question}
+          <h4>{el.question}</h4>
         </AccordionSummaryEl>
-        <AccordionDetailsEl>{el.answer}</AccordionDetailsEl>
+        <AccordionDetailsEl>
+          <h4>{el.answer}</h4>
+        </AccordionDetailsEl>
       </AccordionEl>
     </AccordionElContainer>
   ));
@@ -61,7 +64,7 @@ export default function Index() {
   return (
     <CTAAndFAQForm id="contact-us">
       <CTAFormContainder>
-        <Title>اصنع موقعك الآن</Title>
+        <h4>تواصل معنا </h4>
         <CTANameAndLastNameContainer>
           <InputName
             key={1}
@@ -100,25 +103,45 @@ export default function Index() {
           label="الاستفسار / الطلب"
           name="message"
         />
-        <Sumite style={{ color: "black", fontWeight: "bold" }} type="submit">
+        <h5
+          style={{
+            color: "black",
+            fontWeight: "bold",
+            padding: "8px 12px",
+            borderRadius: "12px",
+            backgroundColor: "#FFD369",
+            cursor: "pointer",
+          }}
+          type="submit"
+        >
           آحجز مكالمة مجانية
-        </Sumite>
+        </h5>
       </CTAFormContainder>
 
-      <Typography sx>آو</Typography>
-      <WhatAppBTN
+      <h5>آو</h5>
+      <div
         target="_blank"
         variant="contained"
         sx={{ fontWeight: "bold" }}
-        href="https://wa.me/+9660576638198"
+        href="https://wa.me/+9660501718111"
+        style={{
+          backgroundColor: "#639D4A",
+          borderRadius: "16px",
+          padding: "8px 40px",
+          color: "white",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
       >
         <WhatsAppIcon sx={{ margin: "0 8px" }} />
-        تواصل عن طريق الواتس آب
-      </WhatAppBTN>
+        <h5>تواصل عن طريق الواتس آب</h5>
+      </div>
 
       {/* FAQ Section */}
       <FAQContainer>
-        <Title sx={{ marginBottom: "24px" }}>أسئلة متكررة</Title>
+        <h5 style={{ marginBottom: "24px" }}>أسئلة متكررة</h5>
+
         {displayAccordion}
       </FAQContainer>
 

@@ -5,6 +5,7 @@ import SecondHomeSecion from "../components/SecondHomeSecion";
 import OurFeature from "../components/ourFeature/index";
 import Reviews from "../components/reviews/index";
 import CTAAndFAQForm from "../components/CTAForm/CTAAndFAQForm";
+import Footer from "../components/footer/index";
 
 export default function HomePage() {
   return (
@@ -14,7 +15,9 @@ export default function HomePage() {
       <SecondHomeSecion />
       <OurFeature />
       <Reviews />
+
       <CTAAndFAQForm />
+      <Footer />
     </div>
   );
 }
