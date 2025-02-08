@@ -6,6 +6,7 @@ import OurFeature from "../components/ourFeature/index";
 import Reviews from "../components/reviews/index";
 import CTAAndFAQForm from "../components/CTAForm/CTAAndFAQForm";
 import Footer from "../components/footer/index";
+import TemporaryDrawer from "../components/appDrawer/AppDrawer";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
 
       <CTAAndFAQForm />
       <Footer />
+      <TemporaryDrawer />
     </div>
   );
 }

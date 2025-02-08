@@ -11,6 +11,7 @@ export default function Index() {
 
   return (
     <Container
+      id="hero-section"
       sx={{
         width: "100%",
         backgroundColor: Colors.color1,

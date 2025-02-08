@@ -10,6 +10,7 @@ export default function SecondHomeSecion() {
   const matches = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Container
+      id="bolitPoints"
       sx={{
         width: "100%",
         backgroundColor: Colors.white,

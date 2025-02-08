@@ -10,6 +10,7 @@ export default function Index() {
   const matches = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Container
+      id="social-proof"
       sx={{
         width: "100%",
         marginTop: "40px",
