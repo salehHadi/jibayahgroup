@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/jibayahgroup/static/css/main.296f4b8c.css",
-    "main.js": "/jibayahgroup/static/js/main.219cad9d.js",
-    "static/css/885.0e75979c.chunk.css": "/jibayahgroup/static/css/885.0e75979c.chunk.css",
-    "static/js/885.61fdca9f.chunk.js": "/jibayahgroup/static/js/885.61fdca9f.chunk.js",
+    "main.js": "/jibayahgroup/static/js/main.6130f9a4.js",
+    "static/css/885.bc369df4.chunk.css": "/jibayahgroup/static/css/885.bc369df4.chunk.css",
+    "static/js/885.bc846a40.chunk.js": "/jibayahgroup/static/js/885.bc846a40.chunk.js",
     "static/js/453.63b15797.chunk.js": "/jibayahgroup/static/js/453.63b15797.chunk.js",
     "static/js/519.af843fa3.chunk.js": "/jibayahgroup/static/js/519.af843fa3.chunk.js",
     "static/media/ai.jpg": "/jibayahgroup/static/media/ai.34c31484dd9c75dbe374.jpg",
@@ -14,8 +14,8 @@
     "static/media/img3.jpg": "/jibayahgroup/static/media/img3.9384d730b0c2cb13cd90.jpg",
     "static/media/profficinalMen.jpg": "/jibayahgroup/static/media/profficinalMen.163f7b3ef935a06ed136.jpg",
     "static/media/img2.jpg": "/jibayahgroup/static/media/img2.7cdd7ca66356343e1580.jpg",
+    "static/media/person.png": "/jibayahgroup/static/media/person.f5b7e2fd6eeab796e5ea.png",
     "static/media/jibayahLogo.png": "/jibayahgroup/static/media/jibayahLogo.9089816fdd5691d40899.png",
-    "static/media/person.png": "/jibayahgroup/static/media/person.eae775a71c319421b1b9.png",
     "static/media/userImage.png": "/jibayahgroup/static/media/userImage.a6837091ee56c99d64f7.png",
     "static/media/accuracy.svg": "/jibayahgroup/static/media/accuracy.eea1bad2211749e5433f49ec52fc97a7.svg",
     "static/media/decision.svg": "/jibayahgroup/static/media/decision.16ca93b2a16d1271f48a410c5dc5b335.svg",
@@ -25,14 +25,14 @@
     "index.html": "/jibayahgroup/index.html",
     "static/media/burgerIcon.svg": "/jibayahgroup/static/media/burgerIcon.4d9f3b28b12ce638d16d4074d6c0bd42.svg",
     "main.296f4b8c.css.map": "/jibayahgroup/static/css/main.296f4b8c.css.map",
-    "main.219cad9d.js.map": "/jibayahgroup/static/js/main.219cad9d.js.map",
-    "885.0e75979c.chunk.css.map": "/jibayahgroup/static/css/885.0e75979c.chunk.css.map",
-    "885.61fdca9f.chunk.js.map": "/jibayahgroup/static/js/885.61fdca9f.chunk.js.map",
+    "main.6130f9a4.js.map": "/jibayahgroup/static/js/main.6130f9a4.js.map",
+    "885.bc369df4.chunk.css.map": "/jibayahgroup/static/css/885.bc369df4.chunk.css.map",
+    "885.bc846a40.chunk.js.map": "/jibayahgroup/static/js/885.bc846a40.chunk.js.map",
     "453.63b15797.chunk.js.map": "/jibayahgroup/static/js/453.63b15797.chunk.js.map",
     "519.af843fa3.chunk.js.map": "/jibayahgroup/static/js/519.af843fa3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.296f4b8c.css",
-    "static/js/main.219cad9d.js"
+    "static/js/main.6130f9a4.js"
   ]
 }
