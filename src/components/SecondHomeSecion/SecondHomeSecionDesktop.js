@@ -74,7 +74,10 @@ export default function SecondHomeSecionDesktop() {
           خلال خدمات تعتمد على الاحترافية والابتكار
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+      <Box
+        sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+        id="serviceArr"
+      >
         <Typography
           variant="h5"
           sx={{
@@ -104,30 +107,32 @@ export default function SecondHomeSecionDesktop() {
         >
           {servicesArr.map((el, index) => {
             return (
-              <Typography
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  textAlign: "center",
-                  padding: "4px 16px",
-                  borderRadius: "8px",
-                  fontWeight: "bold",
-                  cursor: "pointer",
-                  boxShadow: "0px 4px 6px  rgba(0, 0, 0, 0.2)",
-                  color:
-                    serverSelected === index ? Colors.color2 : Colors.color1,
-                  border: `2px solid ${
-                    serverSelected === index ? Colors.color2 : Colors.color1
-                  }`,
-                }}
-                key={index}
-                onClick={() => {
-                  setServeceSeleted(index);
-                }}
-              >
-                {el}
-              </Typography>
+              <a href="#serviceArr">
+                <Typography
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textAlign: "center",
+                    padding: "4px 16px",
+                    borderRadius: "8px",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    boxShadow: "0px 4px 6px  rgba(0, 0, 0, 0.2)",
+                    color:
+                      serverSelected === index ? Colors.color2 : Colors.color1,
+                    border: `2px solid ${
+                      serverSelected === index ? Colors.color2 : Colors.color1
+                    }`,
+                  }}
+                  key={index}
+                  onClick={() => {
+                    setServeceSeleted(index);
+                  }}
+                >
+                  {el}
+                </Typography>
+              </a>
             );
           })}
         </Box>
