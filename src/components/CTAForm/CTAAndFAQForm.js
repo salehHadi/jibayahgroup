@@ -4,13 +4,10 @@ import {
   CTAAndFAQForm,
   CTAFormContainder,
   CTANameAndLastNameContainer,
-  Title,
   InputEmail,
   InputLastName,
   InputName,
   InputPhoneNumber,
-  Sumite,
-  WhatAppBTN,
   FAQContainer,
   AccordionEl,
   AccordionSummaryEl,
@@ -61,8 +58,6 @@ export default function Index() {
     const check = getFirstLitter.match(/[a-z]+|^[\#\w]+$/gi) !== null;
     check ? setDirectionOfWriting("ltr") : setDirectionOfWriting("rtl");
   }
-
-  console.log(directionOfWriting);
 
   return (
     <CTAAndFAQForm id="contact-us">
@@ -153,7 +148,7 @@ export default function Index() {
         {displayAccordion}
       </FAQContainer>
 
-      <ShapeIllustaration src="/assets/shape5.svg" />
+      {/* <ShapeIllustaration src="/assets/shape5.svg" /> */}
     </CTAAndFAQForm>
   );
 }

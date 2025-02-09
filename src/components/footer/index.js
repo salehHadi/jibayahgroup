@@ -1,8 +1,7 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
-import FooterMobile from "./footerMobile";
-import FooterDesktop from "./footerDesktop";
 import { Colors } from "../../styles/theme";
+import jibayahLogo from "../../images/jibayahLogo.png";
 
 export default function Index() {
   const theme = useTheme();
@@ -16,9 +15,18 @@ export default function Index() {
         padding: "24px",
         color: "white",
         textAlign: "center",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
       }}
     >
-      {matches ? <FooterMobile /> : <FooterDesktop />}
+      <img
+        src={jibayahLogo}
+        alt="Logo"
+        width="120px"
+        style={{ borderRadius: "4px" }}
+      />
+      <h5>جميع الحقوق محفوظه لصالح جباية المالية {new Date().getFullYear()}</h5>
     </Box>
   );
 }
