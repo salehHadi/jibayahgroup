@@ -258,6 +258,9 @@ export default function SecondHomeSecionDesktop() {
                   justifyContent: "center",
                   alignItems: "center",
                   borderRadius: "4px",
+                  "&:hover": {
+                    gap: "4px",
+                  },
                 }}
               >
                 <ArrowBackIcon />

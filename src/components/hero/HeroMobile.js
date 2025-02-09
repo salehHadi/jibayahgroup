@@ -33,6 +33,10 @@ export default function HeroMobile() {
           textAlign: "end",
           width: "100%",
           marginBottom: "4px",
+          animation: "fadeIn 1s ease-in-out",
+          animationDelay: "0s",
+          opacity: 0,
+          animationFillMode: "forwards",
         }}
       >
         <Cursor />
@@ -41,7 +45,16 @@ export default function HeroMobile() {
           {text}
         </span>
       </span>
-      <span style={{ fontSize: "12px", marginBottom: "40px" }}>
+      <span
+        style={{
+          fontSize: "12px",
+          marginBottom: "40px",
+          animation: "fadeIn 1s ease-in-out",
+          animationDelay: "0.3s",
+          opacity: 0,
+          animationFillMode: "forwards",
+        }}
+      >
         جباية المالية هي شركة سعودية، متخصصة في تقديم حلول مالية مبتكرة مصممة
         خصيصًا لتلبية احتياجات عملائنا
       </span>
@@ -52,6 +65,10 @@ export default function HeroMobile() {
           alignItems: "center",
           width: "100%",
           borderRadius: "4px",
+          animation: "fadeIn 1s ease-in-out",
+          animationDelay: "0.6s",
+          opacity: 0,
+          animationFillMode: "forwards",
         }}
       >
         <a href="#contact-us">
@@ -86,7 +103,19 @@ export default function HeroMobile() {
       </Box>
 
       <TimeLine />
-      <img src={person} alt="owner" style={{ marginBottom: -2 }} />
+      <img
+        src={person}
+        alt="owner"
+        style={{
+          marginBottom: -2,
+          animation: "fadeIn 1s ease-in-out",
+          animationDelay: "1.8s",
+          opacity: 0,
+          animationFillMode: "forwards",
+          height: "50%",
+          width: "50%",
+        }}
+      />
     </div>
   );
 }

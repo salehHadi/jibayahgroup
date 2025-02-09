@@ -1,8 +1,7 @@
-import { Box, Button, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { Box, Typography } from "@mui/material";
+import React from "react";
 import { Colors, FontWeight } from "../../styles/theme";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import TimeLine from "../timeLine/TimeLine";
 import person from "../../images/person.png";
@@ -35,6 +34,10 @@ export default function HeroDesktop() {
           textAlign: "end",
           width: "100%",
           marginBottom: "4px",
+          animation: "fadeIn 500ms ease-in",
+          animationDelay: "0s",
+          opacity: 0,
+          animationFillMode: "forwards",
         }}
       >
         <Cursor />
@@ -62,7 +65,16 @@ export default function HeroDesktop() {
             alignItems: "center",
           }}
         >
-          <span style={{ fontSize: "18px" }}>
+          <span
+            style={{
+              fontSize: "18px",
+              marginBottom: "8px",
+              animation: "fadeIn 500ms ease-in",
+              animationDelay: "0.9s",
+              opacity: 0,
+              animationFillMode: "forwards",
+            }}
+          >
             جباية المالية هي شركة سعودية، متخصصة في تقديم حلول مالية مبتكرة
             مصممة خصيصًا لتلبية احتياجات عملائنا
           </span>
@@ -78,6 +90,13 @@ export default function HeroDesktop() {
                 alignItems: "center",
                 borderRadius: "4px",
                 width: "fit-content",
+                animation: "fadeIn 500ms ease-in",
+                animationDelay: "1.2s",
+                opacity: 0,
+                animationFillMode: "forwards",
+                "&:hover": {
+                  gap: "4px",
+                },
               }}
             >
               <ArrowBackIcon />
@@ -100,7 +119,14 @@ export default function HeroDesktop() {
         <img
           src={person}
           alt="owner"
-          style={{ marginBottom: -2, width: "33%" }}
+          style={{
+            marginBottom: -2,
+            width: "33%",
+            animation: "fadeIn 500ms ease-in",
+            animationDelay: "0.9s",
+            opacity: 0,
+            animationFillMode: "forwards",
+          }}
         />
         <TimeLine />
       </Box>
